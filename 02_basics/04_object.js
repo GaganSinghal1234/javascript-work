@@ -30,6 +30,7 @@ console.log(obj3);
 
 const obj4 = { ...obj1, ...obj2 }
 console.log(obj4);
+console.log("hii")
 
 // jab database se value aayegi
 
@@ -40,12 +41,18 @@ const users = [
     },
     {
 
-    }, {
+    },
+    {
 
-    }, {
+    },
+    {
 
     }
 ]
 
-users[1].email;//asse print krna h
-console.log(tinderUser)
+console.log(users[0].email);//asse print krna h
+console.log(tinderUser);
+console.log(Object.keys(tinderUser));
+//now you can do anything with data here
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
