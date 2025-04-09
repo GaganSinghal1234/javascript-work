@@ -1,6 +1,6 @@
 //destructuring of objects
 
-const course ={
+const course = {
     coursename: "js by gagan",
     price: "999",
     courseInstructor: "hitesh"
@@ -8,10 +8,10 @@ const course ={
 }
 //course.courseInstructor
 // make it easier we define it as the value of it 
-const {courseInstructor}=course
+const { courseInstructor } = course
 console.log(courseInstructor);
 //or agar tumhe lage ye bada naam h
-const{courseInstructor:instructor}=course
+const { courseInstructor: instructor } = course
 console.log(instructor);
 
 
