@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #141414; color: white;">
+    <h1>hum or hum hi</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("hello world");
+    // },2000)
+    const hihi= function(){
+        console.log("hihi")
+    }
+    setTimeout(hihi,2000);//he have take hihi as reference.
+
+    //document.querySelector('h1').innerHTML="hello world";
+     const changetext = function(){
+        document.querySelector('h1').innerHTML ="hello world"
+     }
+     //setTimeout(changetext,2000);
+     const changeMe =setTimeout(changetext,5000);//both are same as settimeout run automatically.
+     //clearTimeout(changeMe); we are not using it because it does not mean to do any thing
+
+     document.querySelector('#stop').addEventListener('click',function(e){
+        clearTimeout(changeMe);
+        console.log("stop");
+     })
+
+    // 
+</script>
+</html>

@@ -1,0 +1,21 @@
+//default js
+javascript is a synchronous language
+javascript is single threaded
+
+
+//execution context
+execute one line of code at a time 
+console log -1
+console log -2
+
+each operation waits for the last one to complete before executing
+
+
+blocking code: block the flow of program(read file sync)
+                        vs 
+non blocking code : does not block executon(read file async)
+
+
+//diagram
+
+[call stack , memory heap] = javascript engine calls=> webapi((settimeout,setinterval,setevent,fetch())=>registercall back) connected => task queue in a cycle

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#414141; color:white;">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li><img id="one" src="https://images.pexels.com/photos/772478/pexels-photo-772478.jpeg?auto=compress&cs=tinysrgb&w=200" alt="img1"></li>
+            <li><img id="two" src="https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&w=200" alt="img2"></li>
+            <li><img id="three" src="https://images.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg?auto=compress&cs=tinysrgb&w=200" alt="img3"></li>
+            <li><img id="four" src="https://images.pexels.com/photos/1919030/pexels-photo-1919030.jpeg?auto=compress&cs=tinysrgb&w=200" alt="img4"></li>
+            <li><a style="color:aliceblue;" id="five" href="http://www.google.com">google</a></li>
+
+        </ul>
+
+
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('three').onclick = function(){
+    //     alert("three clicked")
+    // }
+     //attachEvent()
+    //jQuery- on
+
+
+    // document.getElementById('three').addEventListener('click', function(e){
+    //     alert("three clicked");
+    //     console.log(e);
+    // },false);//here false is default value, we use false or true to specify the event bubbling(false) or capturing(true)
+
+    //type, timestamp, defaultPrevented, stopPropagation, stopImmediatePropagation
+    //target, toElement,srcElement, relatedTarget, clientX, clientY, offsetX, offsetY, screenX, screenY
+    //altkey, ctrlKey, shiftKey, metaKey, button, buttons, which, pageX, pageY, x, y,keyCode, charCode, key, code, repeat, isComposing
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("chicked inside the ul");
+    // },true);
+
+    // document.getElementById('three').addEventListener('click', function(e){
+    //     console.log("three clicked");
+      
+    // },true);
+    // in this manner capturing is happen means first will be show first then the another one
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("chicked inside the ul");
+    // },false);
+
+    // document.getElementById('three').addEventListener('click', function(e){
+    //     console.log("three clicked");
+    //     e.stopPropagation(); // this will stop the event from bubbling up to the parent element
+    // },false);//only three chicked will be shown
+
+
+    // // preventDefault()
+    
+    // document.getElementById('five').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation(); // this will stop the event from bubbling up to the parent element
+    //     alert("five clicked");
+    //     console.log(e);
+    // },false)
+
+    // some activities
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // const removeIt = e.target.parentNode;
+        // removeIt.remove();
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode;
+            removeIt.remove()
+        }
+    })
+    //removeIt.parentNode.removeChild(removeIt);
+
+
+   
+</script>
+
+</html>
