@@ -1,0 +1,29 @@
+javascript is an prototype based language.
+
+#oops
+
+## object
+- collection of properties and methods
+- tolowercase
+
+# why oops: due to maseup code
+
+## part of oops
+object literal:basic unit
+
+-constructor function
+-prototypes
+-classes
+-instance(new,this)
+
+
+
+
+
+
+## 4 pillars
+Absraction
+Encapsulation
+Inheritance
+Polymorphism
+
